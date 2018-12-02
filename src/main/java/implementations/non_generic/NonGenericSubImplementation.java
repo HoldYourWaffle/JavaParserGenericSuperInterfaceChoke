@@ -1,4 +1,4 @@
-package implementations;
+package implementations.non_generic;
 
 import interfaces.NonGenericSubInterface;
 

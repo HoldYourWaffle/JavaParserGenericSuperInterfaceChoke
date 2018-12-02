@@ -1,8 +1,8 @@
-package implementations;
+package implementations.non_generic;
 
 import interfaces.GenericSubInterface;
 
-public class NonGenericGenericSubImplementation implements GenericSubInterface<String> {
+public class NonGeneric_GenericSub_Implementation implements GenericSubInterface<String> {
 
 	@Override
 	public String genericSuperMethod() {

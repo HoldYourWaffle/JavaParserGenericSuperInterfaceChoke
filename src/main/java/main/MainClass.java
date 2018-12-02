@@ -1,9 +1,10 @@
 package main;
 
-import implementations.GenericGenericSubImplementation;
-import implementations.GenericSuperImplementation;
-import implementations.NonGenericGenericSubImplementation;
-import implementations.NonGenericSubImplementation;
+import implementations.generic.Generic_GenericSub_Implementation;
+import implementations.generic.Generic_Super_Implementation;
+import implementations.non_generic.NonGenericSubImplementation;
+import implementations.non_generic.NonGeneric_GenericSub_Implementation;
+import implementations.non_generic.NonGeneric_Super_Implementation;
 
 public class MainClass {
 	
@@ -18,27 +19,31 @@ public class MainClass {
 	
 	
 	public void choke3() {
-		new NonGenericGenericSubImplementation().genericSuperMethod();
+		new NonGeneric_GenericSub_Implementation().genericSuperMethod();
 	}
 	
 	public void choke4() {
-		new NonGenericGenericSubImplementation().genericSubMethod();
+		new NonGeneric_GenericSub_Implementation().genericSubMethod();
 	}
 	
 	
 	
 	public void choke5() {
-		new GenericGenericSubImplementation<String>().genericSuperMethod();
+		new Generic_GenericSub_Implementation<String>().genericSuperMethod();
 	}
 	
 	public void choke6() {
-		new GenericGenericSubImplementation<String>().genericSubMethod();
+		new Generic_GenericSub_Implementation<String>().genericSubMethod();
 	}
 	
 	
 	
 	public void works() {
-		new GenericSuperImplementation().genericSuperMethod();
+		new NonGeneric_Super_Implementation().genericSuperMethod();
+	}
+	
+	public void works2() {
+		new Generic_Super_Implementation<String>().genericSuperMethod();
 	}
 	
 }

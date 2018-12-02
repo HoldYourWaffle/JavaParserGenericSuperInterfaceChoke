@@ -1,8 +1,8 @@
-package implementations;
+package implementations.generic;
 
 import interfaces.GenericSubInterface;
 
-public class GenericGenericSubImplementation<T> implements GenericSubInterface<T> {
+public class Generic_GenericSub_Implementation<T> implements GenericSubInterface<T> {
 
 	@Override
 	public T genericSuperMethod() {
