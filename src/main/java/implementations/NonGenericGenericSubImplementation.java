@@ -2,7 +2,7 @@ package implementations;
 
 import interfaces.GenericSubInterface;
 
-public class GenericSubImplementation implements GenericSubInterface<String> {
+public class NonGenericGenericSubImplementation implements GenericSubInterface<String> {
 
 	@Override
 	public String genericSuperMethod() {
